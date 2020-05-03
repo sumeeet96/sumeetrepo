@@ -1,0 +1,41 @@
+
+
+### This get request will give the list of movies
+GET http://localhost:3000/movies
+
+
+### create a post/ movies
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+	"name": "The Lord of the Rings: The Fellowship of the Ring",
+	"img": "https://bit.ly/2tC1Lcg",
+	"summary": "A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed."
+}
+
+
+### GET Movies by id
+GET  http://localhost:3000/movies/5eae835690eb39e2524c4a4f
+
+
+
+
+### This  request will update the Movies from from database from id 
+PATCH  http://localhost:3000/movies/5eae835690eb39e2524c4a4f
+Content-Type: application/json
+
+{
+	"name":"I am Iron man"	
+}
+### This send request will Delete the Movies from from database from id.
+
+DELETE  http://localhost:3000/movies/5eae835690eb39e2524c4a4f
+
+
+#### will display a error  which object is created 
+GET http://localhost:3000/
+
+
+
